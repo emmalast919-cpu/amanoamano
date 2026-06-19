@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzas — A Mano A Mano | Crotone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <style>
+    .pizza-hero-icon {
+      position: absolute; right: 8%; top: 50%; transform: translateY(-50%);
+      opacity: 0.06; pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="/" class="nav-logo">
+      <img src="logo.png" alt="A Mano A Mano" />
+      <div class="nav-logo-text" translate="no">A Mano A Mano<span>Pizzeria &amp; Fish Fry</span></div>
+    </a>
+  </div>
+  <div class="nav-center">
+    <a href="/">Home</a><a href="/pizza" class="active">Pizza</a><a href="/frittura">Fry &amp; Kitchen</a><a href="/pasta">Pasta</a><a href="/drinks">Drinks</a><a href="/#map">Find Us</a>
+  </div>
+  <div class="nav-right">
+    <div id="amm-nav-lang"></div>
+    <a href="#" class="nav-order-btn" data-deliveroo>
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      Order Now
+    </a>
+  </div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="/">Home</a><a href="/pizza">Pizza</a><a href="/frittura">Fry &amp; Kitchen</a><a href="/pasta">Pasta</a><a href="/drinks">Drinks</a><a href="/#map">Find Us</a>
+  <a href="#" class="mob-order" data-deliveroo>Order on Deliveroo</a>
+</div>
+
+<!-- PAGE HERO WITH PIZZA ICON -->
+<header class="page-hero" style="position:relative;overflow:hidden;">
+  <!-- Large decorative pizza background -->
+  <svg class="pizza-hero-icon" width="340" height="340" fill="none" stroke="#c41e3a" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+    <path d="M2 12h20"/>
+    <circle cx="8" cy="8" r="1.2" fill="#c41e3a"/>
+    <circle cx="15" cy="9" r="1.2" fill="#c41e3a"/>
+    <circle cx="9" cy="15" r="1.2" fill="#c41e3a"/>
+    <circle cx="14" cy="15" r="1.2" fill="#c41e3a"/>
+  </svg>
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+    <span>Pizzas</span>
+  </div>
+  <!-- Pizza badge icon -->
+  <div style="display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;background:var(--red-light);border-radius:50%;margin-bottom:1.25rem;border:2px solid rgba(196,30,58,0.15);">
+    <svg width="36" height="36" fill="none" stroke="var(--red)" stroke-width="1.8" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+      <path d="M2 12h20"/>
+      <circle cx="8" cy="8" r="1.2" fill="var(--red)"/>
+      <circle cx="15" cy="9" r="1.2" fill="var(--red)"/>
+      <circle cx="9" cy="15" r="1.2" fill="var(--red)"/>
+    </svg>
+  </div>
+  <h1>Our Pizzas</h1>
+  <p>Artisan dough, selected ingredients, baked with passion. 14 red &mdash; 12 white.</p>
+</header>
+
+<section class="section">
+  <div class="section-inner">
+
+    <div class="pizza-tabs">
+      <button class="pizza-tab active-red" data-tab="red">
+        <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+        Red Pizzas
+      </button>
+      <button class="pizza-tab" data-tab="white">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+        White Pizzas
+      </button>
+    </div>
+
+    <!-- RED PIZZAS — 14 items — from official menu -->
+    <div class="pizza-panel active" id="panel-red">
+      <div class="pizza-section-label">
+        <h2>Red Pizzas</h2><span class="pizza-section-badge badge-red">With Tomato Sauce</span>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Margherita</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, basilico, olio evo</div></div><div class="menu-item-price">€ 5.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Marinara</div><div class="menu-item-desc" translate="no">Doppio pomodoro, aglio, origano, olio evo</div></div><div class="menu-item-price">€ 5.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Napoli</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, alici di Cetara, origano, olio evo</div></div><div class="menu-item-price">€ 7.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Calabrese</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, salame stagionato, olive, olio evo</div></div><div class="menu-item-price">€ 8.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Tropea</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, tonno, cipolla, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">#88900</div><div class="menu-item-desc" translate="no">Pomodoro San Marzano, fior di latte, salsiccia fresca, 'nduja e ricotta affumicata</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Wurstel e Patatine</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, wurstel, patatine fritte, olio evo</div></div><div class="menu-item-price">€ 8.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Delizia</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, rucola, prosciutto crudo, scaglie di grana, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Terra Mia</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, salsiccia fresca rossa, patate lesse, olio evo</div></div><div class="menu-item-price">€ 9.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Il Tarantino</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, frutti di mare, olio evo</div><div class="menu-item-note">Seafood special</div></div><div class="menu-item-price">€ 14.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">DOC</div><div class="menu-item-desc" translate="no">Pomodoro, bufala in uscita, origano, olio evo</div></div><div class="menu-item-price">€ 8.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Parmigiana</div><div class="menu-item-desc" translate="no">Pomodoro San Marzano, fior di latte, salame, melanzana fritta, parmigiano</div></div><div class="menu-item-price">€ 12.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Indiavolata</div><div class="menu-item-desc" translate="no">Pomodoro, fior di latte, spianata calabra, polvere di olive nere, peperoncino fresco, basilico, olio evo</div><div class="menu-item-note">Hot &amp; spicy</div></div><div class="menu-item-price">€ 9.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Amatriciana "Calabra"</div><div class="menu-item-desc" translate="no">Pomodoro San Marzano, fior di latte, cipolla di Tropea, guanciale, pomodoro pachino e pecorino crotonese</div><div class="menu-item-note">Chef's signature</div></div><div class="menu-item-price">€ 12.00</div></div>
+      </div>
+    </div>
+
+    <!-- WHITE PIZZAS — 12 items — from official menu -->
+    <div class="pizza-panel" id="panel-white">
+      <div class="pizza-section-label">
+        <h2>White Pizzas</h2><span class="pizza-section-badge badge-white">Without Tomato Sauce</span>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">4 Formaggi</div><div class="menu-item-desc" translate="no">Fior di latte, gorgonzola, formaggio fuso, emmenthal, olio evo</div></div><div class="menu-item-price">€ 8.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Zuccasì</div><div class="menu-item-desc" translate="no">Crema di zucca, fior di latte, salsiccia fresca, gorgonzola, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">A Chiattona</div><div class="menu-item-desc" translate="no">Crema di parmigiano, fior di latte, patate lesse, porchetta, formaggio fuso in uscita</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Gianna Gianna</div><div class="menu-item-desc" translate="no">Crema di parmigiano, fior di latte, prosciutto crudo, gocce di aceto balsamico, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Cacio e Pepe</div><div class="menu-item-desc" translate="no">Fonduta di cacio e pepe, fior di latte, pancetta, pecorino Romano, pepe nero</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Pistacchiella</div><div class="menu-item-desc" translate="no">Crema di pistacchio, fior di latte, mortadella, granella di pistacchio, stracciatella, olio evo</div></div><div class="menu-item-price">€ 12.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Berta filava</div><div class="menu-item-desc" translate="no">Fior di latte, gamberetti, lattuga, stracciatella, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Friariella</div><div class="menu-item-desc" translate="no">Fior di latte, salsiccola fresca, friarielli, olio evo</div></div><div class="menu-item-price">€ 9.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Schiaccia Noci</div><div class="menu-item-desc" translate="no">Crema di noci, fior di latte, gorgonzola, speck, noci, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Nun te reggae più</div><div class="menu-item-desc" translate="no">Fior di latte, 'nduja, funghi porcini, speck, ricotta affumicata, olio evo</div></div><div class="menu-item-price">€ 10.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Mazara del Vallo</div><div class="menu-item-desc" translate="no">Fior di latte, gambero rosso di Mazara a crudo, stracciatella, granella di pistacchio, scorza di limone, olio evo</div></div><div class="menu-item-price">€ 14.00</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name" translate="no">Cotto e Crocchè</div><div class="menu-item-desc" translate="no">Fior di latte, prosciutto cotto, crocchè di patate e formaggio fuso</div></div><div class="menu-item-price">€ 12.00</div></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:4rem;padding-top:3rem;border-top:1px solid var(--border);">
+      <p style="color:var(--muted);margin-bottom:1.5rem;">Want to order from home? Find us on Deliveroo!</p>
+      <button class="btn btn-primary" data-deliveroo>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Order on Deliveroo
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="lang-section">
+  <h3>Select Your Language</h3>
+  <p>Translate this page to your language automatically.</p>
+  <div id="amm-footer-lang"></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo"><img src="logo.png" alt="A Mano A Mano" /><div class="footer-logo-text" translate="no">A Mano A Mano</div></div>
+  <div class="footer-links">
+    <a href="/">Home</a><a href="/pizza">Pizza</a><a href="/frittura">Fry &amp; Kitchen</a><a href="/pasta">Pasta</a><a href="/drinks">Drinks</a><a href="/#map">Find Us</a>
+  </div>
+  <p class="footer-copy">&copy; 2025 <span translate="no">A Mano A Mano</span> — Via Reggio, 123, Crotone KR</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+<script src="translate.js"></script>
+<script src="tracker.js"></script>
+<script src="https://replit-cdn.com/replit-pill/replit-pill.global.js" data-repl-id="b358d5fb-e18d-4c21-a096-3e8b01f54099"></script></body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+
+  "redirects": [
+    { "source": "/style.css",      "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/script.js",      "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/server.js",      "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/app.js",         "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/index.js",       "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/bundle.js",      "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/main.css",       "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/app.css",        "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/.env",           "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/wp-admin",       "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/wp-login.php",   "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/admin",          "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/login",          "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/config",         "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/robots.txt",     "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/sitemap.xml",    "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/phpmyadmin",     "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/backup",         "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false },
+    { "source": "/api",            "destination": "https://www.google.com/maps/search/?api=1&query=A+Mano+A+Mano+Via+Reggio+123+88900+Crotone+KR", "permanent": false }
+  ],
+
+  "rewrites": [
+    { "source": "/",         "destination": "/index.html" },
+    { "source": "/pizza",    "destination": "/pizza.html" },
+    { "source": "/frittura", "destination": "/frittura.html" },
+    { "source": "/pasta",    "destination": "/pasta.html" },
+    { "source": "/drinks",   "destination": "/drinks.html" },
+    { "source": "/owner",    "destination": "/owner.html" }
+  ]
+}
